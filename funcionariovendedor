@@ -1,0 +1,26 @@
+package Prova;
+
+public class FuncionarioVendedor extends Funcionario{
+    private double quantidadeVendida;
+    private double taxaComissao;
+
+    public double getQuantidadeVendida() {
+        return quantidadeVendida;
+    }
+
+    public void setQuantidadeVendida(double quantidadeVendida) {
+        this.quantidadeVendida = quantidadeVendida;
+    }
+
+    public double getTaxaComissao() {
+        return taxaComissao;
+    }
+
+    public void setTaxaComissao(double taxaComissao) {
+        this.taxaComissao = taxaComissao;
+    }
+
+    public FuncionarioVendedor(String nome, String matricula){}
+
+    double calcSalario = quantidadeVendida * taxaComissao;
+}
